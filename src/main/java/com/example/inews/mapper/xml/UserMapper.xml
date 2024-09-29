@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.inews.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.inews.pojo.User">
+        <id column="U_id" property="uId" />
+        <result column="Username" property="Username" />
+        <result column="Password" property="Password" />
+        <result column="Nick_name" property="nickName" />
+        <result column="Avatar" property="Avatar" />
+        <result column="Introduction" property="Introduction" />
+        <result column="Sex" property="Sex" />
+        <result column="Create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        U_id, Username, Password, Nick_name, Avatar, Introduction, Sex, Create_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.inews.mapper.NewsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.inews.pojo.News">
+        <id column="n_id" property="nId" />
+        <result column="n_title" property="nTitle" />
+        <result column="n_content" property="nContent" />
+        <result column="n_good" property="nGood" />
+        <result column="n_collection" property="nCollection" />
+        <result column="view_count" property="viewCount" />
+        <result column="Create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="s_id" property="sId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        n_id, n_title, n_content, n_good, n_collection, view_count, Create_time, update_time, s_id
+    </sql>
+
+</mapper>
